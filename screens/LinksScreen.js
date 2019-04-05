@@ -6,7 +6,17 @@ export default class LinksScreen extends React.Component {
   static navigationOptions = {
     title: 'Links',
   };
+  constructor(props) {
+    super(props)
 
+    this.state = {
+      webData: []
+    }
+  }
+
+  async componentDidMount() {
+
+  }
   render() {
     return (
       <ScrollView style={styles.container}>

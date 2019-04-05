@@ -18,7 +18,7 @@ const Toast = (props) => {
   if (props.visible) {
     ToastAndroid.showWithGravityAndOffset(
       props.message,
-      ToastAndroid.LONG,
+      ToastAndroid.SHORT,
       ToastAndroid.BOTTOM,
       25,
       50,
@@ -78,6 +78,9 @@ export default class HomeScreen extends React.Component {
             <Text style={styles.getStartedText}>
               Change this text and your app will automatically reload . ok got that
             </Text>
+            <Text>
+              Hello i am still learning react native,  this is sample app provided i am trying to manipulate it.
+              </Text>
           </View>
 
           <View style={styles.helpContainer}>
@@ -126,9 +129,11 @@ export default class HomeScreen extends React.Component {
   };
 
   _handleHelpPress = () => {
-    WebBrowser.openBrowserAsync(
-      'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
-    );
+    let currentVisible = this.state.visible;
+    this.setState({ visible: !currentVisible });
+    // WebBrowser.openBrowserAsync(
+    //   'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
+    // );
   };
 }
 
