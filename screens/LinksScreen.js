@@ -15,8 +15,11 @@ export default class LinksScreen extends React.Component {
   }
 
   async componentDidMount() {
+    let API_KEY = "92a08465539a47f993a06ef09f74b3cf";
+    let url = "http://newsapi.org";
 
   }
+
   render() {
     return (
       <ScrollView style={styles.container}>
