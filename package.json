@@ -12,11 +12,14 @@
   },
   "dependencies": {
     "@expo/samples": "2.1.1",
+    "@material-ui/core": "^3.9.3",
     "expo": "^32.0.6",
     "native-base": "^2.12.1",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-navigation": "^3.6.1"
+    "react-native-material-cards": "^1.0.9",
+    "react-navigation": "^3.6.1",
+    "save": "^2.3.3"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.1.1",
